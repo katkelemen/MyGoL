@@ -1,1 +1,5 @@
-valami
+
+
+npm install
+
+npm start
