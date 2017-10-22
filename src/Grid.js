@@ -6,7 +6,7 @@ class Grid extends Component {
     super();
     this.changeNumber = this.changeNumber.bind(this);
     this.state = {
-      row: [0,0,0],
+      row: [0,0,0,0,0,0,0,0,0],
     };
   }
 
@@ -18,7 +18,7 @@ class Grid extends Component {
 
   render() {
     return (
-    	<div>
+    	<div id="grid">
     		{
     			this.state.row.map((val, index) => {
     				return <Box onClick={() => this.changeNumber(index)} key={index} value={val}/>
